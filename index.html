@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/49242c5bc9.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         *{
@@ -12,61 +14,180 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .container{
+        body{
+            min-width: 320px;
+        }
+        .start, .about{
             height: 100vh;
-            background-color: rgb(22, 0, 82);
-            position: relative;
+            width: 100%;
         }
-        .row{
-           width: 100%;
-           height: 100%;
-            position: relative;
-       
-           
+        .start{
+            background-color: blue;
         }
-        .opacity-zero{
-            opacity: 0;
+        .about{
+            background-color: cadetblue;
         }
-        .column1{
-            background-color: #fff;
-            height: 80vh;
-            width: 40vw;
-            float: left;
-            margin: 20px;
+        .projects{
+            background-color: cornflowerblue;
+            padding-top: 16px;
+        }
+      
+        .navbar{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+  
+            border: none;
+            
+        }
+        i{
+            font-size: 2em;
+
+        }
+        .position{
             position: absolute;
             top: 50%;
-            left: 50px;
-            transform: translate(0, -50%);
-            
-
+            transform: translateY(-50%);
+            width: 100%;
         }
-        .column2{
-            background-color: #fff;
-            height: 80vh;
-            width: 40vw;
-            float: left;
-            margin: 20px;
-            position: absolute;
-            top: 50%;
-            right: 50px;
-            transform: translate(0, -50%);
-            
-
+        .overlay3{
+            opacity:0;
+            color: black;
+            font-weight: 800;
+            z-index: 5;
         }
-        .column1:hover,.column2:hover{
-            opacity: 0;
+        a{
+            text-decoration: none;
+            color: black;
         }
+        a:link {
+  text-decoration: none;
+  color: black;
+}
 
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
     </style>
 </head>
 
 <body>
-   <div class="container">
-        <div class="row">
-            <div class="column1"></div>
-            <div class="column2"></div>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Start <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projekty</a>
+            </li>
+          </ul>
         </div>
-   </div>
+      </nav>
+    <div class="start flex-container">
+        Strona startowa
+    </div>
+    <div class="about flex-container">
+        O mnie
+    </div>
+    <div class="projects flex-container">
+        <div class="container-fluid">
+            <div class="row">
+               
+                <div class="col-sm">
+                    <div class="card mb-3 mx-auto text-center">
+                        <img src="./img/olmeca.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Olmeca & Sombrero</h5>
+                          <p class="card-text">Strona restauracji Olmeca & Sombrero</p>
+                          <p class="card-text">Zastosowane technologie: </p>
+                          <p class="card-text">
+                          <i class="fab fa-html5  mr-2" title="HTML5"></i>  
+                            <i class="fab fa-css3-alt mr-2"></i>
+                            <i class="fab fa-js mr-2"></i>
+                            <i class="fab fa-vuejs"></i>
+                              
+                              
+                              
+                            </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div class="card mb-3 mx-auto text-center">
+                        <img src="./img/renovatex.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Renovatex</h5>
+                          <p class="card-text">Strona firmy usługowej Renovatex</p>
+                          <p class="card-text">Zastosowane technologie: </p>
+                          <p class="card-text">
+                            <i class="fab fa-html5  mr-2" title="HTML5"></i>  
+                            <i class="fab fa-css3-alt mr-2"></i>
+                            <i class="fab fa-js"></i>
+                        </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div onmouseleave="pokaz()" class="card mb-0 mx-auto text-center rounded-0">
+                        <div id="overlay3" onmouseenter="ukryj()" class="card-img-overlay overlay3">
+                            <div class="row position">
+                                <div class="col-6"><a href="http://lukaszgnyra.github.io/olmeca-and-sombrero-restaurant">Demo</a></div>
+                                <div class="col-6">GIT</div>
+                            </div>
+                        </div>
+                        <img id="card3" src="./img/olmeca.png" class="card3 card-img rounded-0" alt="...">
+                        
+                      </div>
+                      
+                        <div class="card mb-3 mx-auto text-center rounded-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Renovatex</h5>
+                              <p class="card-text">Strona firmy usługowej Renovatex</p>
+                              <p class="card-text">Zastosowane technologie: </p>
+                              <p class="card-text">
+                                <i class="fab fa-html5  mr-2" title="HTML5"></i>  
+                                <i class="fab fa-css3-alt mr-2"></i>
+                                <i class="fab fa-js"></i>
+                            </p>
+                            </div>
+                          </div>
+                    
+                </div>
+            
+            </div>
+        </div>    
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>
