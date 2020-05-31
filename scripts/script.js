@@ -6,7 +6,7 @@ for (i=0; i < cards.length; i++){
     cards[i].addEventListener("mouseenter", function(){
         
         this.style.opacity="1";
-        this.style.backgroundColor="rgba(150,150,150,.8)";
+        this.style.backgroundColor="rgba(200,200,200,.8)";
         
         
         
