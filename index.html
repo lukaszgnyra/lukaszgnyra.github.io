@@ -7,168 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/49242c5bc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            min-width: 320px;
-            /* background-color: rgba(13, 23, 38, 1); */
-            background-image: url(./img/lotus.png), linear-gradient(to right, rgb(13, 23, 38),rgb(32, 57, 96));
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-        .start{
-            height: 100vh;
-            width: 100%;
-        }
-        .start{
-            /* background-color: blue; */
-        }
-        .about{
-            /* background-color: cadetblue; */
-        }
-        .projects{
-            /* background-color: cornflowerblue; */
-            padding-top: 16px;
-        }
-      
-        .navbar{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            font-size: 1.3em;
-        }
-        .flex-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            
-        }
-        .flex-row{
-          width: 100%;
-          display: flex;
-        }
-        .flex-column-40{
-          display: flex;
-          max-width: 40%;
-          flex: 40%;
-          align-items: center;
-          justify-content: flex-end;
-          font-size: 300px;
-          padding-right: 10px;
-          
-        }
-        .flex-column-60{
-          padding-left: 10px;
-          display: flex;
-          flex-direction: column;
-          max-width: 60%;
-          flex: 60%;
-          justify-content: center;
-          font-size: 50px;
-        }
-        /* .start div{
-          width: 100%;
-          text-align: center;
-        } */
-        .card{
-  
-            border: none;
-            background-color: rgba(0, 0, 0, .7);
-            
-        }
-        i{
-            font-size: 2em;
-
-        }
-        .position{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-        }
-        .overlay{
-            opacity:0;
-            color: black;
-            font-weight: 800;
-            z-index: 5;
-            font-size: 30px;
-            background-color: rgba(150,150,150,.5);
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a:link {
-  
-  color: black;
-}
-
-a:visited {
-  
-  color: black;
-}
-
-a:hover {
- 
-  color: black;
-}
-
-a:active {
-  
-  color: black;
-}
-.skills{
- 
-  text-align: center;
-}
-.skills i{
-  font-size: 150px; 
-}
-.margin{
-  margin:0 100px;
-}
-.card-height{
-  min-height: 261px;
-}
-.bg-none{
-  background: none;
-}
-footer{
-  height: 50px;
-  width: 100%;
-  
-}
-@media (max-width: 576px){
-  .skills i{
-    font-size: 70px;
-  }
-    .skill{
-      font-size: 16px;
-    }
-    .flex-column-40{
-      font-size: 80px;
-    }
-    .flex-column-60{
-      font-size: 30px;
-    }
-}
-
-    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light text-light ">
+    <nav class="navbar navbar-expand-lg navbar-dark text-light ">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -200,10 +46,11 @@ footer{
       </div>
        
  
-    <div class="about text-secondary">
-        O mnie
-        <div class="skills row">
-          <div class="col-12 d-flex justify-content-around">
+    <div class="about text-light d-flex">
+      <div class="about-text">Jestem początkującym Front End Developerem. Programowanie zajmuję się od 9 miesięcy. Studiuję na Wyższej Szkole Bankowej kierunek Programowanie Aplikacji Internetowych. Oto moje portfolio, które planuję w dalszym ciągu rozwijać. Poniżej można zobaczyć kilka moich projektów. Zapraszam do oglądania :)</div>
+    </div>   
+    <div class="skills row text-secondary">
+          <div class="col-12 d-flex justify-content-around mb-4">
             <div class="skill">
               <i class="fab fa-html5"></i>
               <div>HTML5</div>
@@ -214,17 +61,14 @@ footer{
             </div >
             <div class="skill">
               <i class="fab fa-js"></i>
-              <div>HTML5</div>
+              <div>Javascript</div>
             </div>
            
             
             
           </div>
           <div class="col-12 d-flex justify-content-around">
-            <div class="skill" >
-              <i class="fab fa-sass"></i>
-              <div>Sass</div>
-            </div>
+            
             <div class="skill">
               <i class="fab fa-vuejs"></i>
               <div>VueJS</div>
@@ -232,6 +76,10 @@ footer{
             <div class="skill">
               <i class="fab fa-github"></i>
               <div>Github</div>
+            </div>
+            <div class="skill" >
+              <i class="fab fa-sass sass"></i>
+              <div>Sass</div>
             </div>
            
             

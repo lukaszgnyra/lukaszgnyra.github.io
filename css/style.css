@@ -1,0 +1,209 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     min-width: 320px;
+     /* background-color: rgba(13, 23, 38, 1); */
+     background-image: url(../img/lotus.png), linear-gradient(to right, rgb(13, 23, 38), rgb(32, 57, 96));
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+ }
+
+ .start {
+     height: 100vh;
+     width: 100%;
+ }
+
+ .start {
+     /* background-color: blue; */
+ }
+
+ .about {
+     /* background-color: cadetblue; */
+ }
+
+ .projects {
+     /* background-color: cornflowerblue; */
+     padding-top: 16px;
+ }
+
+ .navbar {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     font-size: 1.3em;
+ }
+
+ .row {
+     margin: 0;
+ }
+
+ .flex-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+
+ }
+
+ .flex-row {
+     width: 100%;
+     display: flex;
+ }
+
+ .flex-column-40 {
+     display: flex;
+     max-width: 40%;
+     flex: 40%;
+     align-items: center;
+     justify-content: flex-end;
+     font-size: 300px;
+     padding-right: 10px;
+
+ }
+
+ .flex-column-60 {
+     padding-left: 10px;
+     display: flex;
+     flex-direction: column;
+     max-width: 60%;
+     flex: 60%;
+     justify-content: center;
+     font-size: 50px;
+ }
+
+ /* .start div{
+          width: 100%;
+          text-align: center;
+        } */
+ .card {
+
+     border: none;
+     background-color: rgba(0, 0, 0, .7);
+
+ }
+
+ i {
+     font-size: 2em;
+
+ }
+
+ .position {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 100%;
+ }
+
+ .overlay {
+     opacity: 0;
+     color: black;
+     font-weight: 800;
+     z-index: 5;
+     font-size: 30px;
+     background-color: rgba(150, 150, 150, .5);
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ a:link {
+
+     color: black;
+ }
+
+ a:visited {
+
+     color: black;
+ }
+
+ a:hover {
+
+     color: black;
+ }
+
+ a:active {
+
+     color: black;
+ }
+
+ .skills {
+
+     text-align: center;
+     margin: 90px 0;
+ }
+
+ .skills i {
+     font-size: 150px;
+ }
+
+
+ .card-height {
+     min-height: 261px;
+ }
+
+ .bg-none {
+     background: none;
+ }
+
+ footer {
+     height: 50px;
+     width: 100%;
+
+ }
+
+ .about {
+     background-color: rgba(255, 255, 255, .1);
+     padding: 70px 50px;
+
+ }
+
+ .about-text {
+     width: 60%;
+     font-size: 20px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .skills i.sass {
+     font-size: 120px;
+     line-height: 150px;
+ }
+
+ @media (max-width: 576px) {
+     .skills i {
+         font-size: 70px;
+     }
+
+     .skill {
+         font-size: 16px;
+     }
+
+     .flex-column-40 {
+         font-size: 80px;
+     }
+
+     .flex-column-60 {
+         font-size: 30px;
+         flex: 70%;
+         min-width: 70%;
+     }
+
+     .about {
+         padding: 20px;
+     }
+
+     .about-text {
+         width: 100%;
+         text-align: justify;
+
+     }
+ }
