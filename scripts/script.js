@@ -7,12 +7,13 @@ for (i=0; i < cards.length; i++){
         
         this.style.opacity="1";
         this.style.backgroundColor="rgba(200,200,200,.8)";
-        
+       this.style.pointerEvents=""
         
         
     });
     cards[i].addEventListener("mouseleave", function(){
         this.style.opacity="0";
+        
     });
    
 

@@ -7,13 +7,11 @@
 
  body {
      min-width: 320px;
-     /* background-color: rgba(13, 23, 38, 1); */
      background-image: url(../img/lotus.png), linear-gradient(to right, rgb(13, 23, 38), rgb(32, 57, 96));
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
-     
  }
 
  .start {
@@ -51,7 +49,6 @@
      align-items: center;
      flex-wrap: wrap;
      flex-direction: column;
-
  }
 
  .flex-row {
@@ -67,7 +64,6 @@
      justify-content: flex-end;
      font-size: 300px;
      padding-right: 10px;
-
  }
 
  .flex-column-60 {
@@ -79,21 +75,13 @@
      justify-content: center;
      font-size: 50px;
  }
-
- /* .start div{
-          width: 100%;
-          text-align: center;
-        } */
  .card {
-
      border: none;
      background-color: rgba(0, 0, 0, .7);
-
  }
 
  i {
      font-size: 2em;
-
  }
  .overlay {
      opacity: 0;
@@ -101,7 +89,7 @@
      font-weight: 800;
      z-index: 5;
      font-size: 30px;
-     background-color: rgba(150, 150, 150, .5);
+     background-color: rgba(150, 150, 150, .5);  
  }
 
  a {
@@ -151,20 +139,16 @@
  footer {
      height: 50px;
      width: 100%;
-
  }
 
  .about {
      background-color: rgba(255, 255, 255, .1);
      padding: 70px 50px;
-
  }
 
- .about-text {
-     
+ .about-text { 
      font-size: 20px;
-     margin: 0 auto;
-     
+     margin: 0 auto;  
  }
 
  .skills i.sass {
@@ -180,7 +164,6 @@
      text-align: center;
      margin: 0 auto 15px;
      font-size: 30px;
-
  }
  .position{
      width: 100%;
@@ -190,7 +173,6 @@
      top: 10px;
      right: 10px;
      font-size: 20px;
-    
  }
  .gmail i{
     margin-left: 5px;
